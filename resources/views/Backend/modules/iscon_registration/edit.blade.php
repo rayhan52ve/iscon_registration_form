@@ -3,10 +3,10 @@
 
 
 @section('content')
-<div class="container-fluid col-xl-5 col-md-3 mt-5 pt-5">
+<div class="container-fluid col-xl-5 col-md-5 mt-5 pt-5">
     <div class="row justify-content-center">
         <div class="">
-            <div class="card" style="width: 30rem;">
+            <div class="card">
                 <div class="card-header">
                   <h3>তথ্য পরিবর্তন ফর্ম</h3>
                 </div>
