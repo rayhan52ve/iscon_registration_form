@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\IskonReg;
 use Illuminate\Http\Request;
 
+use Rakibhstu\Banglanumber\NumberToBangla;
+
 class IskonRegController extends Controller
 {
     /**
@@ -12,8 +14,9 @@ class IskonRegController extends Controller
      */
     public function index()
     {
+        $numto = new NumberToBangla();
         $iscons = IskonReg::get();
-        return view('Backend.modules.iscon_registration.index',compact('iscons'));
+        return view('Backend.modules.iscon_registration.index',compact('iscons','numto'));
     }
 
     /**

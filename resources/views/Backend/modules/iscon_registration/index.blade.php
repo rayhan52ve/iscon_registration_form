@@ -40,7 +40,7 @@
                           @foreach ($iscons as $iscon)
                           <tr>
                             
-                            <td>{{$sl++}}</td>
+                            <td>{{$numto->bnNum($sl++)}}</td>
                             <td><b>{{$iscon->name}}<b></td>
                             <td>{{$iscon->phone}}</td>
                             <td>{{$iscon->mondir_name}}</td>
